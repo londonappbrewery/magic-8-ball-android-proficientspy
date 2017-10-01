@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Magic Eight Ball</string>
-    <string name="askme_button">ASK ME</string>
-    <string name="top_heading">let me decide for you</string>
+    <string name="askme_button">ASK</string>
+    <string name="top_heading">Make everyday decisions easier!</string>
     <string name="fortune_wheel_description">Wheel of fortune</string>
     <string name="background_image_description">Space background image</string>
 

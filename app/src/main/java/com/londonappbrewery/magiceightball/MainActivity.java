@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
 import java.util.Random;
 
 import static android.R.attr.button;
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button askmeButton = (Button) findViewById(R.id.askme_button);
+        Button askmeButton = (Button) findViewById(R.id.askButton);
 
 
         final int[] wheels = {
@@ -33,18 +32,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        final ImageView ball_1 = (ImageView)findViewById(R.id.wheel_of_fortune);
+        final ImageView ballDisplay = (ImageView)findViewById(R.id.image_eightBall);
 
         askmeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Random randomnumbergenerator = new Random();
+                Random randomNumberGenerator = new Random();
 
-                int number = randomnumbergenerator.nextInt(5);
+                int number = randomNumberGenerator.nextInt(5);
 
-                ball_1.setImageResource(wheels[number]);
-
+                ballDisplay.setImageResource(wheels[number]);
 
             }
         });
